@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 3 | Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../main-style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/tictactoe.js"></script>
+</head>
+<body>
+	<div class="section header">
+		<div class="container header">
+			<a href="index.html" class="nav_link">Home</a>
+			<a href="tictactoe.html" class="nav_link">Tic Tac Toe</a>
+			<a href="faq.html" class="nav_link">FAQ</a>
+			<a href="registration.html" class="nav_link">Registration Form</a>
+			<a href="contact-us.html" class="nav_link">Contact Us</a>
+		</div>
+	</div>
+	<div class="section content">
+		<div class="container">
+			<h1>Tic Tac Toe</h1>
+			<p>
+				Surely I don't have to explain the rules of Tic Tac Toe to you, right? I mean, Osama bin Laden probably played Tic Tac Toe in his spare time, so I think it's fair of me to expect you to have learned how to play at some point in a past life. Of course, telling you how to play would fill up a lot of space....
+			</p>
+			<p>
+				Ahh fuck it. Anyway, all you have to do is click the button below to start the game!
+			</p>
+			<a id="start" class="button" onclick="startTheGameAlready()">START</a>
+		</div>
+	</div>
+	<div class="section content-dark table">
+		<div class="container">
+			<table id="tictactoe-board" cellpadding="0" cellspacing="0">
+				<tr>
+					<td id="td1"></td>
+					<td id="td2"></td>
+					<td id="td3"></td>
+				</tr>
+				<tr>
+					<td id="td4"></td>
+					<td id="td5"></td>
+					<td id="td6"></td>
+				</tr>
+				<tr>
+					<td id="td7"></td>
+					<td id="td8"></td>
+					<td id="td9"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="background">
+		<div class="menu hidden">
+			<h1 class="gameover"></h1>
+			<p>Would you like to play again?</p>
+			<a class="button" onclick="cleareverything()" href="#">Play Again</a>
+		</div>
+	</div>
+</body>
+</html>
