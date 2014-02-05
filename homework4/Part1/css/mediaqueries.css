@@ -1,0 +1,34 @@
+@media only screen and (max-width: 320px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	#navigation {
+		margin-top: 75px;
+	}
+
+	#navigation ul li a {
+		width: 90%;
+		border-right: none;
+	}
+
+	img {
+		max-width: 90%;
+	}
+
+	#aside {
+		display: none;
+	}
+
+	#content {
+		width: 95%;
+	}
+
+	#header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
