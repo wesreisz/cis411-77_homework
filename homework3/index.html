@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assignment 3</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="jquery.naviDropDown.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+	
+	    $('#navigation_horiz').naviDropDown({
+		    dropDownWidth: '300px'
+	    });	
+	
+    });
+    </script>
+
+<style type="text/css">
+
+	* {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; line-height:16px}
+    .container {
+        margin: 0 auto;
+        width: 950px;
+        height: 100px;
+        background: #592E52;
+        padding: 50px 0 0 0;
+        font: black;
+    }
+
+    /*  replace this with css page eventually*/
+	/* navigation styles - BEGIN */ 
+	
+	/* style for horizontal nav */	
+	#navigation_horiz {
+        width:780px; 
+        clear:both; 
+        padding:0 0 0 0; 
+        margin:0 auto;
+
+	}
+	#navigation_horiz  ul {height:50px; display:block;}
+        #navigation_horiz ul li {
+            display: block;
+            float: left;
+            width: 150px;
+            height: 50px;
+            background: #363357;
+            margin: 0 1px 0 0;
+            position: relative;
+        }
+
+        #navigation_horiz ul li a.navlink {
+            display: block;
+            width: 200px;
+            height: 30px;
+            padding: 20px 0 0;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            font: black;
+        }
+
+        #navigation_horiz ul li a.navlink:hover {
+            color: #AC6DA2;
+        }
+            
+        #navigation_horiz .dropdown {
+            position: absolute;
+            padding: 20px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            -moz-border-radius-bottomright: 10px;
+            -moz-border-radius-bottomleft: 10px;
+        }
+	
+	
+	
+	/* style for each drop down - horizontal */
+    #navigation_horiz ul li #dropdown_one {
+        background: #7E7A41;
+        color: #fff;
+    }
+        #navigation_horiz ul li #dropdown_one a {
+            color: #220F37;
+        }
+	#navigation_horiz ul li #dropdown_two {background:#ccc; color:#fff}
+	#navigation_horiz ul li #dropdown_two a {color:black}
+	#navigation_horiz ul li #dropdown_three {background:#ccc; color:#fff}	
+	#navigation_horiz ul li #dropdown_three a {color:gray}	
+
+    .li:hover{
+        background-color: #12e8c7;
+    }
+		
+
+	/* navigation styles - END */ 
+	/* ----------------------------------------------------- */
+
+    /*body styles replace this with css page eventually*/
+    #myiFrame {
+        margin: 0 auto;        
+    }
+
+    body{
+        padding: 0 0 0 0;
+    }
+
+    #mainBodyWrapper {
+        background-color: #412f55;
+        background-image: url('img/1383096244253.jpg');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+    }
+	
+</style>
+</head>
+
+<body>
+    <div id="mainBodyWrapper">
+        <div class="container">
+
+            <div id="navigation_horiz">
+                <ul>
+                    <li>
+                        <a href="welcome.html" target="mainContent" class="navlink">Welcome!</a>
+                        <div class="dropdown" id="dropdown_one">
+                            <p><a href="welcome.html" target="mainContent">Welcome!</a></p>
+                            <p>
+                                I would like to welcome you to my page.
+                            </p>
+                        </div><!-- .dropdown_menu -->
+                    </li>
+                    <li>
+                        <a href="TicTacToe/TicTacToe.html" target="mainContent" class="navlink">Tic Tac Toe</a>
+                        <div class="dropdown" id="dropdown_one">
+                            <a href="TicTacToe/TicTacToe.html" target="mainContent"><img src="img/TTTthumb.gif" /></a>                           
+                        </div><!-- .dropdown_menu -->
+                    </li>
+                    <li>
+                        <a href="FAQ/FAQ.html" target="mainContent" class="navlink">FAQ</a>
+                        <div class="dropdown" id="dropdown_one">
+                            <p><a href="FAQ/FAQ.html" target="mainContent">FAQ</a></p>
+                            <p>
+                                Get answers to your deepest questions here.
+                            </p>
+                        </div><!-- .dropdown_menu -->
+                    </li>
+                    <li>
+                        <a href="" class="navlink">Registration</a>
+                        <div class="dropdown" id="dropdown_one">
+                            <p>
+                                Be the first person in your neighborhood to register!
+                            </p>                           
+                        </div><!-- .dropdown_menu -->
+                    </li>
+                    <li>
+                        <a href="FeedbackForm/feedback.html" target="mainContent" class="navlink">Contact</a>
+                        <div class="dropdown" id="dropdown_one">
+                            <p><a href="FeedbackForm/feedback.html" target="mainContent">Contact</a></p>
+                            <p>
+                                Shoot me a message.
+                            </p>
+                        </div><!-- .dropdown_menu -->
+                    </li>
+                </ul>
+            </div><!-- #navigation_horiz -->
+
+        </div><!-- .container -->
+
+        <div id="contentWrapper">
+            <iframe id="myiFrame" name="mainContent" src="welcome.html" seamless width="500" height="800">
+
+            </iframe>
+
+
+        </div><!--content wrapper-->
+
+
+
+
+
+    </div><!--main body wrapper-->
+
+   
+    
+	
+    
+</body>
+</html>
