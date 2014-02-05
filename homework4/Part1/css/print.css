@@ -1,0 +1,12 @@
+#header, #navigation, #footer {
+	display: none;
+}
+
+#content {
+	width: 100%;
+}
+
+#aside {
+	float: left;
+	width: 100%;
+}
