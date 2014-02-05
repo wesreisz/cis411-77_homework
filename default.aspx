@@ -8,10 +8,11 @@
 <body>
 
  	<ul>
-        <li><a href="Assignment1/Assignment1a/index.html" target="_top">Assignment 1a</a></li>
-        <li><a href="Assignment1/Assignment1b/Vertigo.html" target="_top">Assignment 1b</a></li>
-    	<li><a href="Assignment2/Assignment2.html" target="_top">Assignment 2</a></li>
-        <li><a href="Assignment3/index.html">Assignment3</a></li>
+        <li><a href="homework1/Assignment1a/index.html" target="_top">Assignment 1a</a></li>
+        <li><a href="homework1/Assignment1b/Vertigo.html" target="_top">Assignment 1b</a></li>
+    	<li><a href="homework2/Assignment2.html" target="_top">Assignment 2</a></li>
+        <li><a href="homework3/index.html">Assignment 3</a></li>
+        <li><a href="homework4/cats.html" target="_top">Assignment 4a</a></li>
     </ul>
     
 </body>
