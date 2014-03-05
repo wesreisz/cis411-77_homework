@@ -107,4 +107,7 @@ C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assign
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.dll
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.pdb
-C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csprojResolveAssemblyReference.cache
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Initial.resources
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.csproj.GenerateResource.Cache
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.Rating.resources
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment5\homework5\MvcMovie\MvcMovie\obj\Debug\MvcMovie.Migrations.DataAnnotations.resources
