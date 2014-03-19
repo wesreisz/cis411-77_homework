@@ -10,17 +10,17 @@ using PetStore.Models;
 
 namespace PetStore.Controllers
 {
-    public class PetsController : Controller
+    public class InventoryController : Controller
     {
         private PetDBContext db = new PetDBContext();
 
-        // GET: /Pets/
+        // GET: /Inventory/
         public ActionResult Index()
         {
             return View(db.Pets.ToList());
         }
 
-        // GET: /Pets/Details/5
+        // GET: /Inventory/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,18 +35,18 @@ namespace PetStore.Controllers
             return View(pet);
         }
 
-        // GET: /Pets/Create
+        // GET: /Inventory/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: /Pets/Create
+        // POST: /Inventory/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Description,DateReceived,Quantity,Price,Image")] Pet pet)
+        public ActionResult Create([Bind(Include="ID,Name,Description,DateReceived,Quantity,Price,Image")] Pet pet)
         {
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace PetStore.Controllers
             return View(pet);
         }
 
-        // GET: /Pets/Edit/5
+        // GET: /Inventory/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -73,7 +73,7 @@ namespace PetStore.Controllers
             return View(pet);
         }
 
-        // POST: /Pets/Edit/5
+        // POST: /Inventory/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -89,7 +89,7 @@ namespace PetStore.Controllers
             return View(pet);
         }
 
-        // GET: /Pets/Delete/5
+        // GET: /Inventory/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -104,7 +104,7 @@ namespace PetStore.Controllers
             return View(pet);
         }
 
-        // POST: /Pets/Delete/5
+        // POST: /Inventory/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

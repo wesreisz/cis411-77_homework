@@ -40,3 +40,17 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.section {
+    padding: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.profile-pic {
+    float: left;
+    width: 15%;
+    margin: 20px;
+}

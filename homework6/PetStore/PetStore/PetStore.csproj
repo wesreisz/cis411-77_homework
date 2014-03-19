@@ -159,10 +159,24 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\PetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201403192223482_Initial.cs" />
+    <Compile Include="Migrations\201403192223482_Initial.Designer.cs">
+      <DependentUpon>201403192223482_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403192228367_HopingImageWorks.cs" />
+    <Compile Include="Migrations\201403192228367_HopingImageWorks.Designer.cs">
+      <DependentUpon>201403192228367_HopingImageWorks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403192252302_MorePets.cs" />
+    <Compile Include="Migrations\201403192252302_MorePets.Designer.cs">
+      <DependentUpon>201403192252302_MorePets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Pet.cs" />
@@ -175,7 +189,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -205,6 +219,11 @@
     <Content Include="Views\Pets\Details.cshtml" />
     <Content Include="Views\Pets\Edit.cshtml" />
     <Content Include="Views\Pets\Index.cshtml" />
+    <Content Include="Views\Inventory\Index.cshtml" />
+    <Content Include="Views\Inventory\Create.cshtml" />
+    <Content Include="Views\Inventory\Delete.cshtml" />
+    <Content Include="Views\Inventory\Details.cshtml" />
+    <Content Include="Views\Inventory\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +234,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201403192223482_Initial.resx">
+      <DependentUpon>201403192223482_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403192228367_HopingImageWorks.resx">
+      <DependentUpon>201403192228367_HopingImageWorks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403192252302_MorePets.resx">
+      <DependentUpon>201403192252302_MorePets.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

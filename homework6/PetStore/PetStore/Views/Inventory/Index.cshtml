@@ -1,0 +1,18 @@
+﻿@model IEnumerable<PetStore.Models.Pet>
+
+@{
+    ViewBag.Title = "Inventory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Inventory</h2>
+
+@foreach (var item in Model)
+{
+    <div class="section">
+        <img class="profile-pic" src="@item.Image" />
+        <h2>@item.Name</h2>
+        <p>@item.Description</p>
+    </div>
+    <div class="clear"></div>
+}

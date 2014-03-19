@@ -42,4 +42,7 @@ C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assign
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\bin\Microsoft.Owin.Security.Facebook.xml
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.dll
 C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.pdb
-C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.csprojResolveAssemblyReference.cache
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.Migrations.Initial.resources
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.csproj.GenerateResource.Cache
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.Migrations.HopingImageWorks.resources
+C:\Users\zachw38\Dropbox\School Folders\2013-2014 Spring Semester\CIS 411\assignment6\homework6\PetStore\PetStore\obj\Debug\PetStore.Migrations.MorePets.resources
