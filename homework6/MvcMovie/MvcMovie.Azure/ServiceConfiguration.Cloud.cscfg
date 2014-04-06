@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="MvcMovie.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="MvcMovie">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=joecloud;AccountKey=dTBQSIIvUFQpbyd0WuB2uEt858EkoNgFdVjyXAJFsrJi429H4/1Sn+0zPqFq1WD4qdcYWuLTiNCE6cffX4gASA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
