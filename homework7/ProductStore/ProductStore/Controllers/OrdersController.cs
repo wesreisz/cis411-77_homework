@@ -12,6 +12,7 @@ using ProductStore.Models;
 
 namespace ProductStore.Controllers
 {
+    [Authorize]
     public class OrdersController : ApiController
     {
         private OrdersContext db = new OrdersContext();
@@ -19,50 +20,44 @@ namespace ProductStore.Controllers
         // GET api/Orders
         public IEnumerable<Order> GetOrders()
         {
-            return db.Orders.AsEnumerable();
+            return db.Orders.Where(o => o.Customer == User.Identity.Name);
         }
 
         // GET api/Orders/5
-        public Order GetOrder(int id)
+        public OrderDTO GetOrder(int id)
         {
-            Order order = db.Orders.Find(id);
+            Order order = db.Orders.Include("OrderDetails.Product")
+        .First(o => o.Id == id && o.Customer == User.Identity.Name);
             if (order == null)
             {
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotFound));
             }
 
-            return order;
-        }
-
-        // PUT api/Orders/5
-        public HttpResponseMessage PutOrder(int id, Order order)
-        {
-            if (ModelState.IsValid && id == order.Id)
+            return new OrderDTO()
             {
-                db.Entry(order).State = EntityState.Modified;
-
-                try
-                {
-                    db.SaveChanges();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    return Request.CreateResponse(HttpStatusCode.NotFound);
-                }
-
-                return Request.CreateResponse(HttpStatusCode.OK);
-            }
-            else
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
+                Details = from d in order.OrderDetails
+                          select new OrderDTO.Detail()
+                          {
+                              ProductID = d.Product.Id,
+                              Product = d.Product.Name,
+                              Price = d.Product.Price,
+                              Quantity = d.Quantity
+                          }
+            };
         }
 
         // POST api/Orders
-        public HttpResponseMessage PostOrder(Order order)
+        public HttpResponseMessage PostOrder(OrderDTO dto)
         {
             if (ModelState.IsValid)
             {
+                var order = new Order()
+                {
+                    Customer = User.Identity.Name,
+                    OrderDetails = (from item in dto.Details
+                                    select new OrderDetail() { ProductId = item.ProductID, Quantity = item.Quantity }).ToList()
+                };
+
                 db.Orders.Add(order);
                 db.SaveChanges();
 
@@ -74,29 +69,6 @@ namespace ProductStore.Controllers
             {
                 return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
-        }
-
-        // DELETE api/Orders/5
-        public HttpResponseMessage DeleteOrder(int id)
-        {
-            Order order = db.Orders.Find(id);
-            if (order == null)
-            {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
-            }
-
-            db.Orders.Remove(order);
-
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
-            }
-
-            return Request.CreateResponse(HttpStatusCode.OK, order);
         }
 
         protected override void Dispose(bool disposing)
