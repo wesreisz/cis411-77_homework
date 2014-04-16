@@ -39,7 +39,7 @@ namespace ProductStore.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("OrdersContext", "UserProfile", "UserId", "UserName", autoCreateTables: true);
 
                     const string adminRole = "Administrator";
                     const string adminName = "Administrator";
