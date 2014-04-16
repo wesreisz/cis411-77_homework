@@ -1,0 +1,25 @@
+body
+{
+	background-color:#D8D8D8;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:20px;
+}
+h1
+{
+	color:#610B5E;
+	text-align:center;
+}
+h2
+{
+	color:#08088A;
+	text-align:right;
+}
+pre
+{
+	color: #FF00FF;
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive;
+}

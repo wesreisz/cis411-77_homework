@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Calculator</title>
+<link href="calc.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+    function DoMath(){
+	    calculator.result.value = eval(calculator.result.value)	
+}
+</script>
+
+<script language="javascript" type="text/javascript">
+    function ClearBox(){
+        document.getElementById('display').value = '';
+    }
+</script>
+
+
+</head>
+
+<body>    
+    <div class="CalcWrapper">
+        <form name="calculator">
+            
+            <div class="DisplayWrapper">                    
+                <input class="displayScreen" id="display" type="text" name="result" />                    
+            </div>
+
+            <table border="0">                
+                <tr>
+                    <td><input class="btn" id="clearButton" type="button" name="CE" value="CE" onclick="javascript: ClearBox();" /></td>
+                    <td><input class="btn" id="plusminusButton" type="button" name="plusminus" value="&plusmn" onclick="" /></td>
+                    <td><input class="btn" id="percentButton" type="button" name="percent" value="%" onclick="" /></td>
+                </tr>
+            </table>
+            <table border="0">
+                <tr>
+                    <td><input class="btn" id="sevenButton" type="button" name="number" value="7" onclick="calculator.result.value += '7'" /></td>
+                    <td><input class="btn" id="eightButton" type="button" name="number" value="8" onclick="calculator.result.value += '8'" /></td>
+                    <td><input class="btn" id="nineButton" type="button" name="number" value="9" onclick="calculator.result.value += '9'" /></td>
+                    <td><input class="btn" id="divideButton" type="button" name="operand" value="&divide" onclick="calculator.result.value += '/'" /></td>
+                </tr>
+
+                <tr>
+                    <td><input class="btn" id="fourButton" type="button" name="number" value="4" onclick="calculator.result.value += '4'" /></td>
+                    <td><input class="btn" id="fiveButton" type="button" name="number" value="5" onclick="calculator.result.value += '5'" /></td>
+                    <td><input class="btn" id="sixButton" type="button" name="number" value="6" onclick="calculator.result.value += '6'" /></td>
+                    <td><input class="btn" id="multiplyButton" type="button" name="operand" value="&times" onclick="calculator.result.value += '*'" /></td>
+                </tr>
+
+                <tr>
+                    <td><input class="btn" id="oneButton" type="button" name="1" value="1" onclick="calculator.result.value += '1'" /></td>
+                    <td><input class="btn" id="twoButton" type="button" name="2" value="2" onclick="calculator.result.value += '2'" /></td>
+                    <td><input class="btn" id="threeButton" type="button" name="3" value="3" onclick="calculator.result.value += '3'" /></td>
+                    <td><input class="btn" id="subtractButton" type="button" name="operand" value="-" onclick="calculator.result.value += '-'" /></td>
+                </tr>
+
+                <tr>
+                    <td><input class="btn" id="zeroButton" type="button" name="number" value="0" onclick="calculator.result.value += '0'" /></td>
+                    <td><input class="btn" id="decimalButton" type="button" name="decimal" value="." onclick="calculator.result.value += '.'" /></td>
+                    <td><input class="btn" id="equalButton" type="button" name="solve" value="=" onclick="javascript:DoMath();" /></td>
+                    <td><input class="btn" id="addButton" type="button" name="operand" value="+" onclick="calculator.result.value += '+'" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>   
+                
+</body>
+</html>

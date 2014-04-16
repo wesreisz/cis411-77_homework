@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Calculator</title>
+
+<script language="javascript" type="text/javascript">
+function DoMath(){
+	calculator.result.value = eval(calculator.result.value)	
+}
+</script>
+
+
+</head>
+
+<body>
+	<form name="calculator">
+    	<table border="1">
+        	<tr>
+            	<th colspan="6"><input type="text" name="result" /></th>
+            </tr>
+            
+            <tr>
+            	<td><input type="button" name="CE" onclick="" /></td>
+                <td><input type="button" name="&plusmn" onclick="" /></td>
+                <td><input type="button" name="%" onclick="" /></td>
+            </tr>
+            
+            <tr>
+            	<td><input type="button" name="7" onclick="calculator.result.value += '7'" /></td>
+                <td><input type="button" name="8" onclick="calculator.result.value += '8'" /></td>
+                <td><input type="button" name="9" onclick="calculator.result.value += '9'" /></td>
+                <td><input type="button" name="&divide" onclick="calculator.result.value += '/'" /></td>
+            </tr>
+            
+            <tr>
+            	<td><input type="button" name="4" onclick="calculator.result.value += '4'" /></td>
+                <td><input type="button" name="5" onclick="calculator.result.value += '5'" /></td>
+                <td><input type="button" name="6" onclick="calculator.result.value += '6'" /></td>
+                <td><input type="button" name="&times" onclick="calculator.result.value += '*'" /></td>
+            </tr>
+            
+            <tr>
+            	<td><input type="button" name="1" onclick="calculator.result.value += '4'" /></td>
+                <td><input type="button" name="2" onclick="calculator.result.value += '5'" /></td>
+                <td><input type="button" name="3" onclick="calculator.result.value += '6'" /></td>
+                <td><input type="button" name="-" onclick="calculator.result.value += '-'" /></td>
+            </tr>
+            
+            <tr>
+            	<td><input type="button" name="0" onclick="calculator.result.value += '0'" /></td>
+                <td><input type="button" name="." onclick="calculator.result.value += '.'" /></td>
+                <td><input type="button" name="=" onclick="javascript:DoMath();" /></td>
+                <td><input type="button" name="+" onclick="calculator.result.value += '+'" /></td>
+            </tr>
+            
+                
+</body>
+</html>

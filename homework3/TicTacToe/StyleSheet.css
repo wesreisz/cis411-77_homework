@@ -1,0 +1,101 @@
+﻿/*CSS for Tic Tac Toe game*/
+
+h2{
+    width: 265px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+/*board position*/
+#boardWrapper{
+    width: 265px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+/*inputs*/
+/*input{
+    font-size: 60px;
+    text-align: center;
+    padding-top: 13px;
+    font-family: 'Courier New';
+    text-transform: uppercase;
+    color: black;
+}*/
+
+/*background for boxes*/
+#boxWrapper{
+    background: black;
+}
+
+/*box*/
+.box{
+    width: 80px;
+    height: 80px;
+    background: white;    
+    display: inline-table;
+    /*padding: 0;*/
+}
+
+.box:hover{
+    background-color: #36ee12;
+}
+
+/*create cross lines in board*/
+#row2Wrapper, #row3Wrapper{
+    margin-top: 4px;
+}
+
+/*create border around board*/
+#row1Wrapper{
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#row2Wrapper{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#row3Wrapper{
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/*winner text display*/
+#button{
+    background: orange;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*reset button*/
+#reset{
+    background: #5c5c5c;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+}
+
+/*on hover over reset button*/
+#reset:hover{
+    background: #303030;
+}
+
+/** css for background images **/
+.box {
+    background-image: none;
+}
+.box.markX {
+    background: #ffffff url('img/x_norm.gif') center center no-repeat;
+}
+.box.markO {
+    background: #ffffff url('img/o_norm.gif') center center no-repeat;
+
+}
